@@ -8,20 +8,30 @@ import { CalendarDatapickerComponent } from './components/calendar-datapicker/ca
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatCardModule} from "@angular/material/card";
 import {MatNativeDateModule} from "@angular/material/core";
+import { DateEditorComponent } from './components/date-editor/date-editor.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { PatientsPendingComponent } from './pages/patients-pending/patients-pending.component';
+import { PatientDetailComponent } from './pages/patient-detail/patient-detail.component';
+import { PatientListItemComponent } from './components/patient-list-item/patient-list-item.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     CalendarComponent,
-    CalendarDatapickerComponent
+    CalendarDatapickerComponent,
+    DateEditorComponent,
+    PatientsPendingComponent,
+    PatientDetailComponent,
+    PatientListItemComponent
   ],
   imports: [
     CommonModule,
     LenderRoutingModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [
     MatDatepickerModule
