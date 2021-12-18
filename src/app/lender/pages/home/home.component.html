@@ -1,0 +1,8 @@
+
+<img class="rounded mx-auto d-block" style="max-width: 30%;" src="assets/logo.png"/>
+<div class="container position-absolute top-50 start-50 translate-middle">
+  <div class="row row-cols-1" *ngFor="let option of options">
+    <button type="button" class="btn btn-secondary btn-home"><h1><i class="bi bi-{{option.icon}}-fill"></i></h1>
+      {{option.label}}</button>
+  </div>
+</div>

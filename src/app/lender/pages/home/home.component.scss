@@ -1,0 +1,9 @@
+@import '~src/app/core/variables';
+
+.btn-home{
+  width: 80%;
+  height: 20vh;
+  margin: 1vh auto auto;
+  background-color: $primary;
+  border-radius: 1vh;
+}
